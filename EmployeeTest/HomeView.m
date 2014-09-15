@@ -20,6 +20,10 @@
     self.view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     
     self.view.backgroundColor = [UIColor redColor];
+    
+    
+    
+    
 }
 
 

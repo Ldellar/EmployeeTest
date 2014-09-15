@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EmployeeL1" representedClassName="EmployeeL1" syncable="YES">
+        <attribute name="biodescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jobtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photolink" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EmployeeL2" representedClassName="EmployeeL2" syncable="YES">
+        <attribute name="biodescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jobtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photolink" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EmployeeL1" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="EmployeeL2" positionX="-54" positionY="-9" width="128" height="103"/>
+    </elements>
 </model>
