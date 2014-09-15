@@ -35,7 +35,7 @@
     NSLog(@"%@ - %lu",emp1.name, (unsigned long)arr.count);
     
     UIButton *l1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [l1 setTitle:@"Level 1" forState:UIControlStateNormal];
+    [l1 setTitle:@"Level 1 - NO PARSING" forState:UIControlStateNormal];
     [l1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [l1 setBackgroundColor:[UIColor whiteColor]];
     [l1 addTarget:self action:@selector(L1EmployeeList) forControlEvents:UIControlEventTouchUpInside];
@@ -43,10 +43,10 @@
     [self.view addSubview:l1];
     
     UIButton *l2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [l2 setTitle:@"Level 2" forState:UIControlStateNormal];
+    [l2 setTitle:@"Level 2 - PARSING" forState:UIControlStateNormal];
     [l2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [l2 setBackgroundColor:[UIColor whiteColor]];
-    [l2 addTarget:self action:@selector(L1EmployeeList) forControlEvents:UIControlEventTouchUpInside];
+    [l2 addTarget:self action:@selector(L2EmployeeList) forControlEvents:UIControlEventTouchUpInside];
     [l2 setFrame:CGRectMake(10, 260, [[UIScreen mainScreen] bounds].size.width-20, 200)];
     [self.view addSubview:l2];
 }
@@ -60,7 +60,9 @@
 
 -(void)L2EmployeeList
 {
-    
+    TableListingView *listView = [[TableListingView alloc]init];
+    listView.checkforLevel = 2;
+    [self.navigationController pushViewController:listView animated:YES];
 }
 
 

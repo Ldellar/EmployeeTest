@@ -13,6 +13,12 @@
     UITableView *tView;
     NSMutableArray *employees;
     NSMutableDictionary *cachedImages;
+    
+    
+    NSArray *teamNodes;
+    NSInteger *fileStoredImages;
+    UIActivityIndicatorView *spinner;
+    NSInteger EmpCount;
 }
 
 @property(nonatomic)NSInteger checkforLevel;

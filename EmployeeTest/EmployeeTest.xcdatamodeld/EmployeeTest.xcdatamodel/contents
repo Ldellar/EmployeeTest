@@ -14,6 +14,6 @@
     </entity>
     <elements>
         <element name="EmployeeL1" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="EmployeeL2" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="EmployeeL2" positionX="-54" positionY="-9" width="128" height="105"/>
     </elements>
 </model>

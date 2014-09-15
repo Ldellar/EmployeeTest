@@ -26,6 +26,10 @@
 		66C8139B19C6F47E00CC25AF /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C8139619C6F47E00CC25AF /* TFHpple.m */; };
 		66C8139C19C6F47E00CC25AF /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C8139819C6F47E00CC25AF /* TFHppleElement.m */; };
 		66C8139D19C6F47E00CC25AF /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C8139A19C6F47E00CC25AF /* XPathQuery.m */; };
+		66C8139F19C70C7300CC25AF /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C8139E19C70C7300CC25AF /* loading.png */; };
+		66C813A219C70C8800CC25AF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C813A119C70C8800CC25AF /* Reachability.m */; };
+		66C813A519C70D8100CC25AF /* CheckReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C813A419C70D8100CC25AF /* CheckReachability.m */; };
+		66E2019B19C71D2E00B3D891 /* ShowDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E2019A19C71D2E00B3D891 /* ShowDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,13 @@
 		66C8139819C6F47E00CC25AF /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
 		66C8139919C6F47E00CC25AF /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		66C8139A19C6F47E00CC25AF /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		66C8139E19C70C7300CC25AF /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		66C813A019C70C8800CC25AF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		66C813A119C70C8800CC25AF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		66C813A319C70D8100CC25AF /* CheckReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckReachability.h; sourceTree = "<group>"; };
+		66C813A419C70D8100CC25AF /* CheckReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckReachability.m; sourceTree = "<group>"; };
+		66E2019919C71D2E00B3D891 /* ShowDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowDetailView.h; sourceTree = "<group>"; };
+		66E2019A19C71D2E00B3D891 /* ShowDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowDetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +127,6 @@
 			children = (
 				66C8137519C6D12600CC25AF /* Main Views */,
 				66C8137A19C6D15900CC25AF /* Detail Views */,
-				66C8137419C6D11B00CC25AF /* HTMLParsing */,
 				66C8138119C6D67100CC25AF /* DBManager */,
 				66C8138B19C6E78100CC25AF /* Utility */,
 				66C8137619C6D12E00CC25AF /* Models */,
@@ -139,6 +149,7 @@
 				66C8134D19C6D0E100CC25AF /* main.m */,
 				66C8138C19C6F04B00CC25AF /* Placeholder.png */,
 				66C8138D19C6F04B00CC25AF /* Placeholder@2x.png */,
+				66C8139E19C70C7300CC25AF /* loading.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -200,6 +211,8 @@
 			children = (
 				66C8139019C6F30800CC25AF /* AddProfileView.h */,
 				66C8139119C6F30800CC25AF /* AddProfileView.m */,
+				66E2019919C71D2E00B3D891 /* ShowDetailView.h */,
+				66E2019A19C71D2E00B3D891 /* ShowDetailView.m */,
 			);
 			name = "Detail Views";
 			sourceTree = "<group>";
@@ -216,6 +229,11 @@
 		66C8138B19C6E78100CC25AF /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				66C8137419C6D11B00CC25AF /* HTMLParsing */,
+				66C813A019C70C8800CC25AF /* Reachability.h */,
+				66C813A119C70C8800CC25AF /* Reachability.m */,
+				66C813A319C70D8100CC25AF /* CheckReachability.h */,
+				66C813A419C70D8100CC25AF /* CheckReachability.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -300,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C8139F19C70C7300CC25AF /* loading.png in Resources */,
 				66C8138F19C6F04B00CC25AF /* Placeholder@2x.png in Resources */,
 				66C8138A19C6DEE900CC25AF /* Main.storyboard in Resources */,
 				66C8138E19C6F04B00CC25AF /* Placeholder.png in Resources */,
@@ -322,14 +341,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C813A219C70C8800CC25AF /* Reachability.m in Sources */,
 				66C8138419C6D69800CC25AF /* DBManager.m in Sources */,
 				66C8135419C6D0E100CC25AF /* EmployeeTest.xcdatamodeld in Sources */,
+				66C813A519C70D8100CC25AF /* CheckReachability.m in Sources */,
 				66C8139219C6F30800CC25AF /* AddProfileView.m in Sources */,
 				66C8138719C6DDE500CC25AF /* TableListingView.m in Sources */,
 				66C8135119C6D0E100CC25AF /* AppDelegate.m in Sources */,
 				66C8139B19C6F47E00CC25AF /* TFHpple.m in Sources */,
 				66C8137919C6D15500CC25AF /* HomeView.m in Sources */,
 				66C8137D19C6D61400CC25AF /* EmployeeL2.m in Sources */,
+				66E2019B19C71D2E00B3D891 /* ShowDetailView.m in Sources */,
 				66C8138019C6D61400CC25AF /* EmployeeL1.m in Sources */,
 				66C8134E19C6D0E100CC25AF /* main.m in Sources */,
 				66C8139D19C6F47E00CC25AF /* XPathQuery.m in Sources */,
